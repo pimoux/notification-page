@@ -160,3 +160,76 @@ body {
     height: 40px;
     transform: translateY(-8px);
 }
+
+@media screen and (min-width: 1000px) {
+    .desktop-full-content {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $lightGrayishBlue1;
+    }
+
+    #main {
+        width: 46%;
+        min-height: fit-content;
+        background-color: $white;
+        border-radius: 1rem;
+    }
+
+    .header {
+        padding-top: 1rem;
+        margin: 0 1.5rem;
+        margin-top: 1.5rem; 
+        p:last-child {
+            transition: color 0.3s;
+            cursor: pointer;
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+
+    .nathan-peterson, .mark-webber, .jacob-thompson, .rizky-hasanuddin, .kimberly-smith {
+        transform: translateY(0px);
+    }
+
+    .notif:not(.second-notif) {
+        margin: 0 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .second-notif {
+        margin: 0 1.5rem;
+        margin-top: 0.75rem;
+    }
+
+    .rizky-private-message {
+        width: 80%;
+        margin-left: 14.5%;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        &:hover {
+            background-color: $lightGrayishBlue1;
+        }
+    }
+
+    .notif-username, .notif-link {
+        cursor: pointer;
+        transition: color 0.3s;
+        &:hover {
+            color: $blue;
+        }
+    }
+
+    .comment {
+        justify-content: space-between;
+        div {
+            margin-right: 28%;
+        }
+        .kimberly-smith-comment {
+            margin-right: 4px;
+        }
+    }
+}
