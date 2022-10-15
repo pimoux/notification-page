@@ -1,43 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Notifications page</title>
 </head>
+
 <body>
+  <main id="main">
 
-  Notifications 3
+    <header class="header">
+      <p>Notifications<span>3</span></p>
+      <p>Mark all as read</p>
+    </header>
 
-  Mark all as read
+    <section class="notif">
+      <img src="/assets/images/avatar-mark-webber.webp" alt="mark-webber" class="mark-webber" />
+      <div>
+        <p class="notif-message"><span class="notif-username">Mark Webber</span>&nbsp; reacted to your recent post&nbsp; <span class="notif-link">My
+            first tournament today!</span>&nbsp;&nbsp;<span class="unseen"></span></p>
+        <p class="notif-date">1m ago</p>
+      </div>
+    </section>
 
-  Mark Webber reacted to your recent post My first tournament today!
-  1m ago
+    <section class="notif second-notif">
+      <img src="/assets/images/avatar-angela-gray.webp" alt="angela-gray" class="angela-gray" />
+      <div>
+        <p class="notif-message"><span class="notif-username">Angela Gray</span>&nbsp; followed you &nbsp;<span class="unseen"></span></p>
+        <p class="notif-date">5m ago</p>
+      </div>
+    </section>
 
-  Angela Gray followed you
-  5m ago
+    <section class="notif second-notif">
+      <img src="/assets/images/avatar-jacob-thompson.webp" alt="jacob-thompson" class="jacob-thompson" />
+      <div>
+        <p class="notif-message"><span class="notif-username">Jacob Thompson</span>&nbsp; has joined your group &nbsp; <span class="notif-link blue">Chess Club</span>&nbsp;&nbsp;<span class="unseen"></span></p>
+        <p class="notif-date">1 day ago</p>
+      </div>
+    </section>
 
-  Jacob Thompson has joined your group Chess Club
-  1 day ago
+    <section class="notif second-notif notif-seen">
+        <img src="/assets/images/avatar-rizky-hasanuddin.webp" alt="rizky-hasanuddin" class="rizky-hasanuddin" />
+        <div>
+          <p class="notif-message"><span class="notif-username">Rizky Hasanuddin</span>&nbsp; sent you a private message &nbsp;</p>
+          <p class="notif-date">5 days ago</p>
+        </div>
+    </section>
+    <div class="rizky-private-message">
+      Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+      I'm already having lots of fun and improving my game.
+    </div>
 
-  Rizky Hasanuddin sent you a private message
-  5 days ago
-  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-  I'm already having lots of fun and improving my game.
+    <section class="notif second-notif notif-seen">
+      <img src="/assets/images/avatar-kimberly-smith.webp" alt="kimberly-smith" class="kimberly-smith" />
+      <div>
+        <p class="notif-message"><span class="notif-username">Kimberly Smith</span>&nbsp; commented on your picture &nbsp;</p>
+        <p class="notif-date">1 week ago</p>
+      </div>
+      <img src="/assets/images/image-chess.webp" alt="image-chess" class="kimberly-smith-comment" />
+    </section>
 
-  Kimberly Smith commented on your picture
-  1 week ago
+    <section class="notif second-notif notif-seen">
+      <img src="/assets/images/avatar-nathan-peterson.webp" alt="nathan-peterson" class="nathan-peterson" />
+      <div>
+        <p class="notif-message"><span class="notif-username">Nathan Peterson</span>&nbsp; reacted to your recent post <span class="notif-link">5 end-game strategies to increase your win rate</span> &nbsp;</p>
+        <p class="notif-date">2 weeks ago</p>
+      </div>
+    </section>
 
-  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-  2 weeks ago
-
-  Anna Kim left the group Chess Club
-  2 weeks ago
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <section class="notif second-notif notif-seen">
+      <img src="/assets/images/avatar-anna-kim.webp" alt="anna-kim" class="anna-kim" />
+      <div>
+        <p class="notif-message"><span class="notif-username">Anna Kim</span> left the group <span class="notif-link blue">Chess Club</span></p>
+        <p class="notif-date">2 weeks ago</p>
+      </div>
+    </section>
+  </main>
 </body>
+
 </html>

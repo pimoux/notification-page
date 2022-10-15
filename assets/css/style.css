@@ -1,0 +1,163 @@
+@font-face {
+  font-family: "PlusJakartaSans";
+  src: url("/assets/fonts/static/PlusJakartaSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "PlusJakartaSans";
+  src: url("/assets/fonts/static/PlusJakartaSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "PlusJakartaSans";
+  src: url("/assets/fonts/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "PlusJakartaSans", sans-serif;
+}
+
+#main {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.header p:first-child {
+  font-weight: 800;
+  font-size: 20px;
+  color: #1c202b;
+}
+
+.header p:first-child span {
+  font-weight: 800;
+  font-size: 18px;
+  color: white;
+  background-color: #0a317b;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  margin-left: 0.75rem;
+}
+
+.header p:last-child {
+  color: #5e6778;
+}
+
+.mark-webber, .angela-gray, .jacob-thompson, .rizky-hasanuddin, .kimberly-smith, .nathan-peterson, .anna-kim {
+  margin: 0 1rem;
+  width: 40px;
+  height: 40px;
+}
+
+.mark-webber, .jacob-thompson, .rizky-hasanuddin, .kimberly-smith {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+
+.angela-gray {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.nathan-peterson {
+  -webkit-transform: translateY(-16px);
+          transform: translateY(-16px);
+}
+
+.notif {
+  margin: 0 1rem;
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f7fafd;
+  border-radius: 0.75rem;
+  padding: 1rem 0;
+  padding-right: 0.5rem;
+}
+
+.notif-message {
+  font-size: 15px;
+  margin-bottom: 0.25rem;
+  color: #5e6778;
+}
+
+.notif-username, .notif-link {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.notif-username.blue, .notif-link.blue {
+  color: #0a317b;
+}
+
+.notif-username {
+  color: black;
+}
+
+.notif-date {
+  color: #939dae;
+  font-size: 15px;
+}
+
+.unseen {
+  display: inline-block;
+  background-color: #f65351;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+}
+
+.second-notif {
+  margin-top: 0.75rem;
+}
+
+.notif-seen {
+  background-color: white;
+}
+
+.rizky-private-message {
+  margin-left: 23%;
+  width: 71%;
+  color: #5e6778;
+  border: 1px solid #dde7ee;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  padding-right: 1.5rem;
+  text-align: left;
+}
+
+.kimberly-smith-comment {
+  width: 40px;
+  height: 40px;
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+/*# sourceMappingURL=style.css.map */

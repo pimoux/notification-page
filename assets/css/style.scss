@@ -1,0 +1,161 @@
+//FONTS
+
+@font-face {
+    font-family: "PlusJakartaSans";
+    src: url("/assets/fonts/static/PlusJakartaSans-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "PlusJakartaSans";
+    src: url("/assets/fonts/static/PlusJakartaSans-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "PlusJakartaSans";
+    src: url("/assets/fonts/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
+    font-weight: 400;
+}
+
+//COLORS
+
+$red: hsl(1, 90%, 64%);
+$blue: hsl(219, 85%, 26%);
+
+$white: hsl(0, 0%, 100%);
+$veryLightGrayishBlue: hsl(210, 60%, 98%);
+$lightGrayishBlue1: hsl(211, 68%, 94%);
+$lightGrayishBlue2: hsl(205, 33%, 90%);
+$grayishBlue: hsl(219, 14%, 63%);
+$darkGrayishBlue: hsl(219, 12%, 42%);
+$veryDarkBlue: hsl(224, 21%, 14%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "PlusJakartaSans", sans-serif;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.header p:first-child {
+    font-weight: 800;
+    font-size: 20px;
+    color: $veryDarkBlue;
+}
+
+.header p:first-child span{
+    font-weight: 800;
+    font-size: 18px;
+    color: $white;
+    background-color: $blue;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+    margin-left: 0.75rem;
+}
+
+.header p:last-child {
+    color: $darkGrayishBlue;
+}
+
+.mark-webber, .angela-gray, .jacob-thompson, .rizky-hasanuddin, .kimberly-smith, .nathan-peterson, .anna-kim {
+    margin: 0 1rem;
+    width: 40px;
+    height: 40px;
+}
+
+.mark-webber, .jacob-thompson, .rizky-hasanuddin, .kimberly-smith {
+    transform: translateY(-8px);
+}
+
+.angela-gray {
+    transform: translateY(0px);
+}
+
+.nathan-peterson {
+    transform: translateY(-16px);
+}
+
+.notif {
+    margin: 0 1rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $veryLightGrayishBlue;
+    border-radius: 0.75rem;
+    padding: 1rem 0;
+    padding-right: 0.5rem;
+}
+
+.notif-message {
+    font-size: 15px;
+    margin-bottom: 0.25rem;
+    color: $darkGrayishBlue;
+}
+
+.notif-username, .notif-link {
+    font-size: 15px;
+    font-weight: 800;
+    &.blue {
+        color: $blue;
+    }
+}
+
+.notif-username {
+    color: black;
+}
+
+.notif-date {
+    color: $grayishBlue;
+    font-size: 15px;
+}
+
+.unseen {
+    display: inline-block;
+    background-color: $red;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+}
+
+.second-notif {
+    margin-top: 0.75rem;
+}
+
+.notif-seen {
+    background-color: $white;
+}
+
+.rizky-private-message {
+    margin-left: 23%;
+    width: 71%;
+    color: $darkGrayishBlue;
+    border: 1px solid $lightGrayishBlue2;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    padding-right: 1.5rem;
+    text-align: left;
+}
+
+.kimberly-smith-comment {
+    width: 40px;
+    height: 40px;
+    transform: translateY(-8px);
+}
